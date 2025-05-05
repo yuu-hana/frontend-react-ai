@@ -1,0 +1,26 @@
+/* 預設按鈕樣式 */
+
+button {
+    display: block;
+    background-color: var(--color-main);
+    box-shadow: 0px 2px 3px var(--color-shadow);
+    border: none;
+    border-radius: 60px;
+    cursor: pointer;
+
+    color: var(--color-text-anti-white);
+    font-weight: 600;
+    text-align: center;
+}
+button:active {
+    box-shadow: none;
+}
+
+button:disabled,
+button[disabled] {
+    background-color: var(--color-input-unvalid);
+    box-shadow: none;
+    cursor: not-allowed;
+
+    color: var(--color-text-anti-white);
+}

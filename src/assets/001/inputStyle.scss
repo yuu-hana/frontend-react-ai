@@ -1,0 +1,74 @@
+// 輸入欄相關預設樣式
+
+.inputBlock, .selectionBlock, .textBlock{
+    position: relative;
+}
+input {
+    display: block;
+    border: none;
+    border-bottom: 1px solid var(--color-input-standby);
+    padding: 10px 5px;
+
+    font-size: 18px;
+    color: var(--color-text-test);
+    letter-spacing: 1px;
+
+    &[type="password"] {
+        letter-spacing: 3px;
+    }
+
+    &[type="file"] {
+        border-bottom: 0px;
+    }
+    
+    &[type="date"] {
+        position: relative;
+        &::-webkit-calendar-picker-indicator {
+            width: 300px;
+            height: 40px;
+            background-image: none;
+            z-index: 2;
+
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+        }
+    }
+
+    &:-webkit-autofill {
+        box-shadow: 0 0 0px 1000px var(--color-background-pure) inset !important;
+        -webkit-text-fill-color: var(--color-text-test);
+        caret-color: var(--color-text-test);
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.errorMsg {
+    display: block;
+    height: 20px;
+    margin-top: 5px;
+
+    color: var(--color-input-wrong);
+    font-size: 12px;
+    font-weight: bold;
+
+    .text{
+        &::before {
+            content: "!";
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            border: 1px solid var(--color-input-wrong);
+            border-radius: 50%;
+            margin-right: 5px;
+            transform: scale(0.8);
+    
+            text-align: center;
+            line-height: 12px;
+        }
+    }
+}
+

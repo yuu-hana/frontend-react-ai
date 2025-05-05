@@ -1,0 +1,156 @@
+// 頁面主要框架樣式
+
+.head {
+    width: calc(100% - 485px);
+    height: 60px;
+    padding: 10px;
+    display: flex;
+
+    position: fixed;
+    top: 25px;
+    left: 215px;
+    input{
+        background-color: transparent; 
+         &:-webkit-autofill {
+             box-shadow: 0 0 0px 1000px var(--color-background) inset !important;
+         }
+     }
+     .selectionBlock{
+        width: 150px;
+        margin-right: 20px;
+    }
+    .inputBlock{
+        width: 200px;
+        margin-right: 40px;
+        label{
+            background-color: transparent;
+        }
+    }
+    .filterDate{
+        input{
+            height: 40px;
+            background-color: transparent;
+            border-bottom: 1px solid var(--color-main);
+            color: var(--color-main);
+            text-align: center;
+            & ~ .bar:before, & ~ .bar:after {
+                border: none;
+                width:0%;
+            }    
+            & ~ label, & ~ label {
+                color: var(--color-input-normal);
+                font-size:14px;
+                top:-20px;
+            }
+    
+        }
+    }
+}
+.neck {
+    display: flex;
+    width: calc(100% - 200px - 30px);
+    height: 40px;
+    padding: 0px 20px;
+    z-index: 4;
+    position: fixed;
+    top: 150px;
+    left: 215px;
+    .iconBlock{
+        width: 30px;
+        height: 30px;
+        margin-right: 8px;
+    }
+    .right{
+        margin-left: 87%;
+    }
+}
+.propWindow{
+    .inputBlock{
+        width: 200px;
+        margin-right: 40px;
+        label{
+            background-color: transparent;
+        }
+    }
+}
+.divider {
+    width: calc(100% - 200px - 30px);
+    height: 40px;
+    padding-left: 20px;
+
+    position: fixed;
+    top: 100px;
+    left: 215px;
+    line-height: 40px;
+}
+.firstLayer{
+    cursor: auto;
+    &:active{
+        box-shadow: -1px 1px 2px 1px var(--color-shadow);
+    }
+}
+
+.content {
+    width: calc(100% - 200px - 30px);
+    height: calc(100% - 185px - 50px);
+    height:-webkit-fill-available;
+    position: fixed;
+    top: 185px;
+    left: 215px;
+}
+
+// exam
+.top{
+    width: 80%;
+    height: 80px;
+    position: absolute;
+    top: 40px;
+    left: 10%;
+    display: flex;
+    align-items: center;
+}
+.center{
+    width: 80%;
+    height: 850px;
+    position: absolute;
+    top: 110px;
+    left: 10%;
+    user-select:none;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    .ps{
+        padding: 30px 50px;
+        color: var(--color-text-test);
+        letter-spacing: 1px;
+        word-wrap: break-word;
+        word-break: break-all;
+        white-space: pre-wrap;
+        overflow: hidden;
+        .examInfo{
+            margin-bottom: 30px;
+            text-align: center;
+        }
+    }
+}
+.bottom{
+    width: 80%;
+    height: 80px;
+    position: absolute;
+    bottom: 70px;
+    left: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    button{
+        width: 140px;
+        height: 60px;
+        font-size: 17px;
+        letter-spacing: 2px;
+        margin: 0px 20px;
+    }
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}

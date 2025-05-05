@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+/* 主題樣式 */
+@import './a11y-dark.css';
+
+:root {
+
+  color: var(--color-main);
+
+  /* 主色 - 大標題 or 強調顏色 */
+  --color-main: #4b89c3;
+
+  /* 背景顏色 - 也作淺色反白文字 */
+  --color-background: rgb(246, 248, 252);
+  --color-background-pure: white;
+
+  /* 邊框顏色 */
+  --color-border: rgb(196, 213, 220);
+
+  /* 裝飾顏色 */
+  --color-blue-transparent: rgba(178, 211, 235, 0.443);
+  --color-blue: rgba(178, 211, 235);
+
+  /* 陰影 */
+  --color-shadow: rgba(0, 0, 0, 0.2);
+  --color-shadow-white: rgba(138, 138, 138, 0.1);
+
+  /* 反白文字 */
+  --color-text-anti-white: white;
+
+  /* 考試文字 */
+  --color-text-test: #161616;
+
+  /* input - 無效顏色 */
+  --color-input-unvalid: rgb(238, 246, 252);
+
+  /* input - 等待顏色 */
+  --color-input-standby: rgb(196, 218, 234);
+
+  /* input - 正常顏色 */
+  --color-input-normal: rgb(75, 137, 195);
+  --color-black: rgb(28, 27, 27);
+  /* --color-input-normal: rgb(90, 153, 212); */
+
+  /* input - 錯誤顏色 */
+  --color-input-wrong: rgb(245, 88, 88);
+  --color-error:rgb(245, 88, 88);
+
+  /* 特殊顏色 */
+  --color-yellow: #FFBC0B;
+  --color-red: #f55858;
+  --color-green: #5fc683;
+
+  /* 區塊顏色 */
+  --color-y: #ffc973;
+  --color-y-deep: rgb(255, 192, 93);
+  --color-r: #e86c74;
+  --color-r-deep: rgb(229, 94, 103);
+  --color-g: #7FBAB7;
+  --color-g-deep: rgb(97, 178, 174);
+  --color-b: #7FA6C9;
+  --color-b-deep: rgb(99, 148, 193);
+
+  /* rgb 設定 */
+  --rgb-y: 255, 192, 93;
+  --rgb-r: 231, 89, 98;
+  --rgb-g: 97, 178, 174;
+  --rgb-b: 99, 148, 193;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+  }
+} */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0;
+  scrollbar-width: none;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  /* background-color: var(--color-background); */
+  font-family:
+    'Segoe UI',
+    "Noto Sans TC",
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+/* a {
+  text-decoration: none; 
+  color: inherit;
+  cursor: pointer; 
+} */
+
+.v-data-table-footer__items-per-page{
+    display: none !important;
+}
