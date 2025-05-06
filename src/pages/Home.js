@@ -24,8 +24,17 @@ function Home() {
           to="/001"
           variant="contained"
           color="primary"
+          sx={{ mr: 2 }}
         >
           前往 Day 001
+        </Button>
+        <Button
+          component={Link}
+          to="/002"
+          variant="contained"
+          color="primary"
+        >
+          前往 Day 002
         </Button>
       </Container>
     </>
