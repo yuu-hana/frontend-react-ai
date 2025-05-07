@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Day001 from './pages/Day001';
 import Day002 from './pages/Day002';
+import Day003 from './pages/Day003';
 
 // 創建主題
 const theme = createTheme({
@@ -28,6 +29,12 @@ fontLink.href = 'https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;70
 fontLink.rel = 'stylesheet';
 document.head.appendChild(fontLink);
 
+// 添加 Inconsolata 字體
+const inconsolataLink = document.createElement('link');
+inconsolataLink.href = 'https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;700;800&display=swap';
+inconsolataLink.rel = 'stylesheet';
+document.head.appendChild(inconsolataLink);
+
 function App() {
   return (
     <Router>
@@ -38,6 +45,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/001" element={<Day001 />} />
             <Route path="/002" element={<Day002 />} />
+            <Route path="/003" element={<Day003 />} />
           </Routes>
         </Box>
       </ThemeProvider>
